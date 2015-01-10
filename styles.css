@@ -106,5 +106,12 @@ a {
 
 ul.footer__links {
   list-style-type: none;
-  /*how do I make the list items flow horizontally?*/
+  margin: 0 auto;
+  padding: 0; /*reset? padding so we can center the text*/
+}
+
+/*Make the list items flow horizontally*/
+li.footer__link-item {
+  display: inline-block;
+  margin: 0 auto;
 }
