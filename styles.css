@@ -72,6 +72,11 @@ a {
    
 }
 
+/* Scale image on hover */
+.image-links__img:hover {
+  transform: scale(1.1) translate(-50%, -50%);
+}
+
 /*I can center these if I give them a specific pixel size, but how to make it scale?*/
 /*OR -- build this without dynamically sizing cells - give them a specific size*/
 /*If I want them to dynamically resize, how can I center - i tried css-tricks but collapsing*/
