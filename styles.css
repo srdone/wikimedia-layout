@@ -101,6 +101,7 @@ a {
 
 .footer__text {
   width: 100%;
+  margin: 2px 0;
 }
 
 ul.footer__links {
