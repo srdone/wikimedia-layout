@@ -73,8 +73,14 @@ a {
 }
 
 /* Scale image on hover */
+/* see http://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 .image-links__img:hover {
   transform: scale(1.1) translate(-50%, -50%);
+}
+
+/* transition */
+.image-links__img {
+  transition: all .2s ease-in-out; 
 }
 
 /*I can center these if I give them a specific pixel size, but how to make it scale?*/
