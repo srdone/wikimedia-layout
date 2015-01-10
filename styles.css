@@ -78,7 +78,7 @@ a {
 /* http://css-tricks.com/centering-css-complete-guide/ */
 .image-links__img {
   width: 100%;
-  max-width: 150px; /*prevent images from pixelating*/
+  max-width: 122px; /*prevent images from pixelating - use smallest image width*/
   height: auto;
   margin: auto 0;
   position: absolute;
