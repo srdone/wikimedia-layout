@@ -1,1 +1,68 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
 
+a {
+  
+}
+
+.container {
+  width: 80%;
+  min-width: 500px; /*we should see what they actually use*/
+  height: 100%;
+}
+
+.body-text {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.body-text__common {
+  width: 100%;
+}
+
+.image-links {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.image-links__row {
+  display: block;
+  width: 100%;
+}
+
+.image-links__cell {
+   width: 25%;
+}
+
+.image-links__link {
+   
+}
+
+.image-links__img {
+  width: 100%;
+}
+
+
+.footer {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.footer__horizonal-rule {
+  
+}
+
+.footer__text {
+  
+}
+
+.footer__links {
+  
+}
