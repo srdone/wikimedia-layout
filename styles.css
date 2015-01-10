@@ -10,9 +10,10 @@ a {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   min-width: 500px; /*we should see what they actually use*/
   height: 100%;
+  margin: 0 auto; /*center the container in the body*/
 }
 
 .body-text {
@@ -25,19 +26,34 @@ a {
   width: 100%;
 }
 
+.body-text__right { /*not the best symantic name - think of a better one*/
+  width: 100%;
+  text-align: right; 
+}
+
 .image-links {
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
 }
 
+/*must use float to make sure divs don't take up just one row*/
 .image-links__row {
-  display: block;
+  float: left; /*we float the row div so the row div height doesn't collapse filled with floated rows*/
   width: 100%;
 }
 
+.image-links-row:after {
+  clear: both;
+}
+
+.image-links-row:before {
+  clear: both;
+}
+
 .image-links__cell {
-   width: 25%;
+  width: 25%;
+  float: left;
 }
 
 .image-links__link {
@@ -60,9 +76,10 @@ a {
 }
 
 .footer__text {
-  
+  width: 100%;
+  text-align: center;
 }
 
-.footer__links {
+ul.footer__links {
   
 }
