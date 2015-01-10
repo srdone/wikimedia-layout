@@ -34,14 +34,20 @@ a {
 
 .image-links {
   width: 100%;
+  height: auto;
   padding: 5px;
   box-sizing: border-box;
+  float: left;
+  overflow: hidden;
 }
 
 /*must use float to make sure divs don't take up just one row*/
 .image-links__row {
-  float: left; /*we float the row div so the row div height doesn't collapse filled with floated rows*/
+  float: left;
+  /*we float the row div so the row div height doesn't collapse filled with floated rows*/
+  height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .image-links-row:after {
@@ -55,9 +61,11 @@ a {
 .image-links__cell {
   width: 25%;
   height: 100%;
+  min-height: 200px;
   float: left;
   padding: 5px 10px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .image-links__link {
@@ -65,6 +73,7 @@ a {
 }
 
 /*I can center these if I give them a specific pixel size, but how to make it scale?*/
+/*OR -- build this without dynamically sizing cells - give them a specific size*/
 /*If I want them to dynamically resize, how can I center - i tried css-tricks but collapsing*/
 /* http://css-tricks.com/centering-css-complete-guide/ */
 .image-links__img {
@@ -72,6 +81,10 @@ a {
   max-width: 150px; /*prevent images from pixelating*/
   height: auto;
   margin: auto 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
