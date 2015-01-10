@@ -74,6 +74,7 @@ a {
 
 /* Scale image on hover */
 /* see http://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+/* how do i make the transition happen from the center of the image instead of the bottom-right corner? */
 .image-links__img:hover {
   transform: scale(1.1) translate(-50%, -50%);
 }
